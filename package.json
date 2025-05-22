@@ -11,7 +11,8 @@
     "build": "vite build",
     "lint": "tsc -p convex -noEmit && eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "vitest"
   },
   "dependencies": {
     "@clerk/backend": "^1.21.4",
@@ -88,6 +89,9 @@
     "prettier": "^3.4.2",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9"
+    "vite": "^4.4.9",
+    "vitest": "^1.6.0",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/jest-dom": "^6.4.0"
   }
 }
