@@ -11,7 +11,8 @@
     "build": "vite build",
     "lint": "tsc -p convex -noEmit && eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "bun test"
   },
   "dependencies": {
     "@clerk/backend": "^1.21.4",
@@ -72,6 +73,9 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/katex": "^0.16.7",
     "@types/node": "^20.7.0",
     "@types/react": "^18.2.21",
@@ -80,14 +84,17 @@
     "@typescript-eslint/parser": "^6.7.0",
     "@vitejs/plugin-react": "^4.0.4",
     "autoprefixer": "^10.4.16",
+    "bun-types": "^1.2.14",
     "eslint": "^8.49.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "jsdom": "^22.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.30",
     "prettier": "^3.4.2",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9"
+    "vite": "^4.4.9",
+    "vitest": "^1.0.0"
   }
 }
